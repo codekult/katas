@@ -7,8 +7,9 @@ const contraries = {
     WEST: 'EAST'
 };
 
-const dirReduc = reduce((dirs, dir) => (
-    last(dirs) === contraries[dir]
-        ? dropLast(1)(dirs)
-        : [ ...dirs, dir]
-))([]);
+const dirReduc = reduce(
+    (dirs, dir) =>
+        last(dirs) === contraries[dir]
+            ? dropLast(1)(dirs)
+            : [ ...dirs, dir]
+)([]);
