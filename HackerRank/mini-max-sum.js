@@ -1,4 +1,4 @@
-// https://www.hackerrank.com/challenges/plus-minus/problem
+// https://www.hackerrank.com/challenges/mini-max-sum/problem
 
 /**
  * 
@@ -26,9 +26,6 @@ function calculateMiniMaxSum(numbers) {
 
 function miniMaxSum(numbers) {
   const results = calculateMiniMaxSum(numbers);
-  console.log(results);
   const resultsMessage = results.reduce((acc, curr) => `${acc} ${curr}`);
   console.log(resultsMessage);
 }
-
-miniMaxSum([256741038, 623958417, 467905213, 714532089, 938071625]);
